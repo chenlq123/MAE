@@ -4,7 +4,6 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
 
 ![Image of result1](https://github.com/chenlq123/MAE/blob/main/img/1.png)
 
-![Image of result2](https://github.com/chenlq123/MAE/blob/main/img/9.png)
 
 ## Preparation
   
@@ -66,8 +65,13 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
    ```bash
       CUDA_VISIBLE_DEVICES=0 python scripts/train_MAE.py --debug --lr_warm_up  --dataset PRW -p ./logs/ --batch_size 2 --nw 2 --w_RCNN_loss_bbox 10.0 --epochs 16 --lr 0.003 --lr_decay_step 8
    ```
-  
-  
+   
+   
+## Result
+ 
+ ![Image of result2](https://github.com/chenlq123/MAE/blob/main/img/9.png)
+ 
+ 
 ## Citation
 
 ```latex
