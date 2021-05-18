@@ -5,5 +5,5 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
 <h2>Preparation<h2>
   1. Clone this repo:
   
-  <addr>https://github.com/DeanChan/NAE4PS.git<addr>
+  <addr>https://github.com/chenlq123/MAE.git && cd MAE<addr>
   
