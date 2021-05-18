@@ -3,6 +3,8 @@
 Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.org/ftp/arxiv/papers/2102/2102.07968.pdf) has been accepted by IJCNN2021. Our code is stored in this repository.
 
 <h2>Preparation<h2>
+  
+  
   1. Clone this repo:
   
   `<https://github.com/chenlq123/MAE.git && cd MAE>`
@@ -29,12 +31,26 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   
   6. Before Training
   
-  You need to modify the **path** in the **lib/datasets/__init__.py** and **lib/model/faster_rcnn_mae.py**.
+  You need to modify the *path* in the *lib/datasets/__init__.py* and *lib/model/faster_rcnn_mae.py*.
   
   
   
-  7. Training
+  7. Test
   
+  
+  For CUHK-SYSU
+  
+  `<CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/cuhk_sysu/>`
+  
+  
+  For PRW
+  
+  `<CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/prw/  --dataset PRW>`
+  
+  
+  8. Train
+  
+  `<CUDA_VISIBLE_DEVICES=0 python scripts/train_MAE.py --debug --lr_warm_up -p ./logs/ --batch_size 2 --nw 2 --w_RCNN_loss_bbox 10.0 --epochs 22 --lr 0.003 --lr_decay_step 8>`
   
   
   
