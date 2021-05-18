@@ -54,3 +54,15 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   
   
   
+  
+  
+## Citation
+
+```latex
+@inproceedings{chen2020norm,
+  title={Multi-Attribute Enhancement Network for Person Search},
+  author={Lequan Chen, Wei Xie, Zhigang Tu, Jinglei Guo, Yaping Tao, Xinming Wang},
+  booktitle={IJCNN},
+  year={2021}
+}
+```
