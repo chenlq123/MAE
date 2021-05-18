@@ -8,16 +8,16 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   1. Clone this repo:
   
    ```bash
-  https://github.com/chenlq123/MAE.git && cd MAE
+    https://github.com/chenlq123/MAE.git && cd MAE
    ```
   
   
   2. Requirements
   
-  Python 3.6 with all *requirements.txt*(except for the first line) dependencies installed. To install run:
+      Python 3.6 with all *requirements.txt* (except for the first line) dependencies installed. To install run:
 
    ```bash
-  pip install -r requirements.txt
+    pip install -r requirements.txt
    ```
   
   
@@ -35,38 +35,33 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   
   6. Before Training
   
-  You need to modify the *path* in the *lib/datasets/__init__.py* and *lib/model/faster_rcnn_mae.py*.
+      You need to modify the *path* in the *lib/datasets/__init__.py* and *lib/model/faster_rcnn_mae.py*.
   
   
   
-  7. Test
+  7. Test for CUHK-SYSU or PRW
   
-  
-  For CUHK-SYSU
 
 
    ```bash
-      CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/cuhk_sysu/
+        CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/cuhk_sysu/
    ```
-
-
-  For PRW
-  
   
    ```bash
-      CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/prw/  --dataset PRW
+        CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/prw/  --dataset PRW
    ```
   
   
-  8. Train
+  8. Train for CUHK-SYSU or PRW
 
 
    ```bash
       CUDA_VISIBLE_DEVICES=0 python scripts/train_MAE.py --debug --lr_warm_up -p ./logs/ --batch_size 2 --nw 2 --w_RCNN_loss_bbox 10.0 --epochs 22 --lr 0.003 --lr_decay_step 8
    ```
-  
-  
-  
+   
+   ```bash
+      CUDA_VISIBLE_DEVICES=0 python scripts/train_MAE.py --debug --lr_warm_up  --dataset PRW -p ./logs/ --batch_size 2 --nw 2 --w_RCNN_loss_bbox 10.0 --epochs 16 --lr 0.003 --lr_decay_step 8
+   ```
   
   
 ## Citation
