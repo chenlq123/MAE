@@ -2,6 +2,10 @@
 
 Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.org/ftp/arxiv/papers/2102/2102.07968.pdf) has been accepted by IJCNN2021. Our code is stored in this repository.
 
+![Image of result1](https://github.com/chenlq123/MAE/blob/main/img/1.png)
+
+![Image of result2](https://github.com/chenlq123/MAE/blob/main/img/9.png)
+
 ## Preparation
   
   
