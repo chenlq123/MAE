@@ -14,11 +14,11 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   
   2. Requirements
   
-    Python 3.6 with all requirements.txt(except for the first line) dependencies installed. To install run:
+  Python 3.6 with all requirements.txt(except for the first line) dependencies installed. To install run:
 
-     ```bash
-    pip install -r requirements.txt
-     ```
+   ```bash
+  pip install -r requirements.txt
+   ```
   
   
   
@@ -26,7 +26,7 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   
   
   
-  4. Download the dataset of CUHK-SYSU and PRW.
+  4. Download the dataset of [CUHK-SYSU](https://github.com/ShuangLI59/person_search) and [PRW](https://github.com/liangzheng06/PRW-baseline) to the *data/*.
   
   
   
@@ -35,30 +35,35 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   
   6. Before Training
   
-    You need to modify the *path* in the *lib/datasets/__init__.py* and *lib/model/faster_rcnn_mae.py*.
+  You need to modify the *path* in the *lib/datasets/__init__.py* and *lib/model/faster_rcnn_mae.py*.
   
   
   
   7. Test
   
   
-    For CUHK-SYSU
-
-     ```bash
-    CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/cuhk_sysu/
-     ```
+  For CUHK-SYSU
 
 
-    For PRW
-     ```bash
-    CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/prw/  --dataset PRW
-     ```
+   ```bash
+      CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/cuhk_sysu/
+   ```
+
+
+  For PRW
+  
+  
+   ```bash
+      CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/prw/  --dataset PRW
+   ```
   
   
   8. Train
-     ```bash
-    CUDA_VISIBLE_DEVICES=0 python scripts/train_MAE.py --debug --lr_warm_up -p ./logs/ --batch_size 2 --nw 2 --w_RCNN_loss_bbox 10.0 --epochs 22 --lr 0.003 --lr_decay_step 8
-     ```
+
+
+   ```bash
+      CUDA_VISIBLE_DEVICES=0 python scripts/train_MAE.py --debug --lr_warm_up -p ./logs/ --batch_size 2 --nw 2 --w_RCNN_loss_bbox 10.0 --epochs 22 --lr 0.003 --lr_decay_step 8
+   ```
   
   
   
