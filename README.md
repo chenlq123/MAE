@@ -16,7 +16,7 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   
   
   
-  3. Download the [trained model](https://github.com/chenlq123/MAE/releases/download/v1.0/pre_train.zip) from the Release.
+  3. Download the [Trained Model](https://github.com/chenlq123/MAE/releases/download/v1.0/pre_train.zip) from the Release.
   
   
   
@@ -24,6 +24,17 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   
   
   
-  5. Download the [Attribute Label](https://github.com/chenlq123/MAE/releases/download/v1.0/pre_train.zip) from the Release.
+  5. Download the [Attribute Label](https://github.com/chenlq123/MAE/releases/download/a1.0/Attribute.Label.zip) from the Release. And put them in dataset, respectively.
+  
+  
+  6. Before Training
+  
+  You need to modify the **path** in the **lib/datasets/__init__.py** and **lib/model/faster_rcnn_mae.py**.
+  
+  
+  
+  7. Training
+  
+  
   
   
