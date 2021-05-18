@@ -5,5 +5,9 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
 <h2>Preparation<h2>
   1. Clone this repo:
   
-  <addr>https://github.com/chenlq123/MAE.git && cd MAE<addr>
+  `<https://github.com/chenlq123/MAE.git && cd MAE>`
   
+  2. Requirements
+  Python 3.6 with all requirements.txt(except for the first line) dependencies installed. To install run:
+  
+  `<pip install -r requirements.txt>`
