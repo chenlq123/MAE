@@ -1,20 +1,24 @@
-<h1>MAE<h1>
+# MAE
 
 Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.org/ftp/arxiv/papers/2102/2102.07968.pdf) has been accepted by IJCNN2021. Our code is stored in this repository.
 
-<h2>Preparation<h2>
+## Preparation
   
   
   1. Clone this repo:
   
-  `<https://github.com/chenlq123/MAE.git && cd MAE>`
+   ```bash
+  https://github.com/chenlq123/MAE.git && cd MAE
+   ```
   
   
   2. Requirements
   
   Python 3.6 with all requirements.txt(except for the first line) dependencies installed. To install run:
   
-  `<pip install -r requirements.txt>`
+   ```bash
+  pip install -r requirements.txt
+   ```
   
   
   
@@ -40,17 +44,21 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   
   For CUHK-SYSU
   
-  `<CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/cuhk_sysu/>`
+   ```bash
+  CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/cuhk_sysu/
+   ```
   
   
   For PRW
-  
-  `<CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/prw/  --dataset PRW>`
+   ```bash
+  CUDA_VISIBLE_DEVICES=0 python scripts/test_MAE.py -p pre_logs/prw/  --dataset PRW
+   ```
   
   
   8. Train
-  
-  `<CUDA_VISIBLE_DEVICES=0 python scripts/train_MAE.py --debug --lr_warm_up -p ./logs/ --batch_size 2 --nw 2 --w_RCNN_loss_bbox 10.0 --epochs 22 --lr 0.003 --lr_decay_step 8>`
+   ```bash
+  CUDA_VISIBLE_DEVICES=0 python scripts/train_MAE.py --debug --lr_warm_up -p ./logs/ --batch_size 2 --nw 2 --w_RCNN_loss_bbox 10.0 --epochs 22 --lr 0.003 --lr_decay_step 8
+   ```
   
   
   
