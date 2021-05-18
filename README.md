@@ -7,7 +7,23 @@ Our paper [Multi-Attribute Enhancement Network for Person Search](https://arxiv.
   
   `<https://github.com/chenlq123/MAE.git && cd MAE>`
   
+  
   2. Requirements
+  
   Python 3.6 with all requirements.txt(except for the first line) dependencies installed. To install run:
   
   `<pip install -r requirements.txt>`
+  
+  
+  
+  3. Download the [trained model](https://github.com/chenlq123/MAE/releases/download/v1.0/pre_train.zip) from the Release.
+  
+  
+  
+  4. Download the dataset of CUHK-SYSU and PRW.
+  
+  
+  
+  5. Download the [Attribute Label](https://github.com/chenlq123/MAE/releases/download/v1.0/pre_train.zip) from the Release.
+  
+  
